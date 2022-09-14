@@ -1,0 +1,19 @@
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		SubjectList subjects = new SubjectList();
+		int level;
+		String field;
+		String code;
+		
+		subjects.addSubject("A100", "Maths", 1, "Maths");
+		
+		System.out.println("Please enter your level of study: ");
+		level = sc.nextInt();
+		System.out.println("Please enter your preferred field of study: ");
+		field = "Maths";
+		
+		String recommendedSubject = subjects.recommendSubject(level, field);
+		System.out.println("Your recommended subject is: " + recommendedSubject);
+	}
+}
