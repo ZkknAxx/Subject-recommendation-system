@@ -1,0 +1,37 @@
+public class Subject {
+	
+	/*
+	 The subject code is a unique identifier for the subject (primary key)
+	 */
+	String subjectCode;
+	String name;
+	int levelOfStudy;
+	String fieldOfStudy;
+	
+	public Subject(String a, String x, int y, String z) {
+		subjectCode = a;
+		name = x;
+		levelOfStudy = y;
+		fieldOfStudy = z;
+	}
+	
+	public String getSubjectCode() {
+		return this.subjectCode;
+	}
+	
+	public String getSubjectName() {
+		return this.name;
+	}
+	
+	public String getSubjectField() {
+		return this.fieldOfStudy;
+	}
+	
+	public int getSubjectLevel() {
+		return this.levelOfStudy;
+	}
+	
+	public boolean subject(String code) {
+		return code.equals(this.subjectCode);
+	}
+}
