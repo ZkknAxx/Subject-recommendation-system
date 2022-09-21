@@ -1,0 +1,23 @@
+public class Student {
+	public int studentID;
+	public String preference;
+	public int studyLevel;
+
+	public Student(int id, String preference, int lvl) {
+		studentID = id;
+		this.preference = preference;
+		studyLevel = lvl;
+	}
+	
+	public String getPreference() {
+		return this.preference;
+	}
+	
+	public int getLevel() {
+		return this.studyLevel;
+	}
+	
+	public int getID() {
+		return this.studentID;
+	}
+}
