@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -6,14 +9,22 @@ public class Main {
 		String field;
 		String code;
 		
-		subjects.addSubject("A100", "Maths", 1, "Maths");
+		subjects.addSubject("Year 1 Maths", "Maths", 1, "Maths");
+		subjects.addSubject("Year 2 Maths", "Maths", 2, "Maths");
+		subjects.addSubject("Year 3 Maths", "Maths", 3, "Maths");
+		subjects.addSubject("Year 1 Eng", "Eng", 1, "Language");
+		subjects.addSubject("Year 2 French", "French", 2, "Language");
+		subjects.addSubject("Year 3 Chinese", "Chinese", 3, "Language");
 		
-		System.out.println("Please enter your level of study: ");
-		level = sc.nextInt();
+		
 		System.out.println("Please enter your preferred field of study: ");
-		field = "Maths";
+		field = sc.nextLine();
+		System.out.println("Please enter your level of study:");
+		level = sc.nextInt();
+		
 		
 		String recommendedSubject = subjects.recommendSubject(level, field);
 		System.out.println("Your recommended subject is: " + recommendedSubject);
+		//System.out.println(field + " " + level);
 	}
 }
