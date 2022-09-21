@@ -1,0 +1,24 @@
+import java.util.ArrayList;
+
+public class StudentPreferenceList {
+	public ArrayList<Student> students = new ArrayList<Student>();
+	public ArrayList<String> preferences = new ArrayList<String>();
+	
+	public void updatePreferencesList() {
+		for(int i=0; i<students.size(); i++) {
+			preferences.add(students.get(i).getPreference());
+		}
+	}
+	
+	public void addStudent() {
+		
+	}
+	
+	public void removeStudent() {
+		
+	}
+	
+	public void updateStudent() {
+		
+	}
+}
